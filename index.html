@@ -3,73 +3,67 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Destravando Vendas — Funil Completo com Upsells</title>
+<title>Destravando Vendas — Instagram & Facebook</title>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
-  --azul:#1877F2;--azul-esc:#0D4FB0;--roxo:#833AB4;
-  --laranja:#F77737;--dourado:#F5A623;
-  --verde:#00C87A;--preto:#07070F;--cinza:#111120;
-  --cinza2:#191928;--cinza3:#222235;
-  --texto:#E8E8F2;--texto2:#8888AA;--branco:#fff;
+  --azul:#1877F2;--roxo:#833AB4;--laranja:#F77737;--dourado:#F5A623;
+  --verde:#00C87A;--preto:#07070F;--cinza:#111120;--cinza2:#191928;
+  --cinza3:#222235;--texto:#E8E8F2;--texto2:#8888AA;--branco:#fff;
 }
 *{margin:0;padding:0;box-sizing:border-box;}
 html{scroll-behavior:smooth;}
 body{font-family:'DM Sans',sans-serif;background:var(--preto);color:var(--texto);overflow-x:hidden;}
-
-.container{max-width:920px;margin:0 auto;padding:0 1.2rem;}
-section{padding:5rem 1.2rem;}
+.container{max-width:860px;margin:0 auto;padding:0 1.4rem;}
+section{padding:5rem 1.4rem;}
 h2{font-family:'Syne',sans-serif;font-size:clamp(1.8rem,5vw,3rem);font-weight:800;line-height:1.05;color:var(--branco);margin-bottom:1.1rem;}
 .g{background:linear-gradient(90deg,#1877F2,#833AB4);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
 .go{background:linear-gradient(90deg,#F77737,#F5A623);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
 .gv{background:linear-gradient(90deg,#00C87A,#1877F2);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
-.tag{display:inline-block;font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.14em;color:var(--azul);border:1px solid rgba(24,119,242,.35);background:rgba(24,119,242,.08);padding:.28rem .85rem;border-radius:50px;margin-bottom:.9rem;}
-.tag-v{color:var(--verde)!important;border-color:rgba(0,200,122,.35)!important;background:rgba(0,200,122,.08)!important;}
-.tag-o{color:var(--laranja)!important;border-color:rgba(247,119,55,.35)!important;background:rgba(247,119,55,.08)!important;}
-.lead{color:var(--texto2);font-size:1.05rem;max-width:630px;line-height:1.7;}
+.gr{background:linear-gradient(90deg,#9B27AF,#E91E8C);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+.tag-pill{display:inline-block;font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.14em;padding:.3rem .9rem;border-radius:50px;margin-bottom:.9rem;}
+.tag-azul{color:var(--azul);border:1px solid rgba(24,119,242,.35);background:rgba(24,119,242,.08);}
+.tag-verde{color:var(--verde);border:1px solid rgba(0,200,122,.35);background:rgba(0,200,122,.08);}
+.tag-laranja{color:var(--laranja);border:1px solid rgba(247,119,55,.35);background:rgba(247,119,55,.08);}
+.tag-roxo{color:#C084FC;border:1px solid rgba(155,39,175,.35);background:rgba(155,39,175,.08);}
+.lead{color:var(--texto2);font-size:1.05rem;max-width:620px;line-height:1.75;}
 .cta{display:inline-block;font-family:'Syne',sans-serif;font-size:.95rem;font-weight:700;padding:.95rem 2.2rem;border-radius:8px;text-decoration:none;text-transform:uppercase;letter-spacing:.06em;border:none;cursor:pointer;transition:all .25s;}
 .cta-azul{background:linear-gradient(135deg,#1877F2,#833AB4);color:#fff;box-shadow:0 4px 20px rgba(24,119,242,.3);}
 .cta-azul:hover{transform:translateY(-3px);box-shadow:0 10px 35px rgba(131,58,180,.45);}
 .cta-verde{background:linear-gradient(135deg,#00C87A,#1877F2);color:#fff;box-shadow:0 4px 20px rgba(0,200,122,.3);}
 .cta-verde:hover{transform:translateY(-3px);box-shadow:0 10px 35px rgba(0,200,122,.4);}
-.cta-laranja{background:linear-gradient(135deg,#F77737,#F5A623);color:#fff;box-shadow:0 4px 20px rgba(247,119,55,.3);}
+.cta-laranja{background:linear-gradient(135deg,#F77737,#F5A623);color:#fff;}
 .cta-laranja:hover{transform:translateY(-3px);box-shadow:0 10px 35px rgba(247,119,55,.4);}
-.cta-outline{background:transparent;color:var(--texto2);border:1px solid rgba(255,255,255,.15);font-size:.82rem;padding:.5rem 1.2rem;border-radius:8px;}
-.cta-outline:hover{border-color:rgba(255,255,255,.35);color:var(--texto);}
+.cta-roxo{background:linear-gradient(135deg,#9B27AF,#E91E8C);color:#fff;}
+.cta-roxo:hover{transform:translateY(-3px);box-shadow:0 10px 30px rgba(155,39,175,.4);}
+.cta-block{display:block;width:100%;text-align:center;padding:1.1rem;border-radius:10px;font-family:'Syne',sans-serif;font-size:1rem;font-weight:800;text-transform:uppercase;letter-spacing:.07em;border:none;cursor:pointer;color:#fff;transition:all .25s;}
+.skip{display:block;text-align:center;margin-top:.8rem;font-size:.8rem;color:var(--texto2);cursor:pointer;text-decoration:underline;text-underline-offset:3px;}
+.skip:hover{color:var(--texto);}
 
-/* FUNIL MAP */
-.fmap-bar{background:var(--cinza);border-bottom:1px solid rgba(255,255,255,.05);padding:1rem 1.2rem;}
-.fmap{display:flex;align-items:center;justify-content:center;gap:.3rem;flex-wrap:wrap;}
-.fbox{background:var(--cinza2);border:1px solid rgba(255,255,255,.08);border-radius:7px;padding:.45rem 1rem;font-size:.75rem;font-weight:600;color:var(--texto2);white-space:nowrap;}
-.fbox.main{border-color:rgba(24,119,242,.5);color:#60A5FA;background:rgba(24,119,242,.12);}
-.fbox.up1{border-color:rgba(0,200,122,.45);color:#34D399;background:rgba(0,200,122,.1);}
-.fbox.up2{border-color:rgba(247,119,55,.45);color:#FB923C;background:rgba(247,119,55,.1);}
-.farr{color:rgba(255,255,255,.2);font-size:.9rem;}
-
-/* HERO */
-.hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:4rem 1.2rem;position:relative;overflow:hidden;}
-.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 55% 40% at 20% 50%,rgba(131,58,180,.17) 0%,transparent 65%),radial-gradient(ellipse 55% 40% at 80% 50%,rgba(24,119,242,.17) 0%,transparent 65%);}
-.ig-badge{display:inline-flex;align-items:center;gap:.5rem;background:linear-gradient(90deg,#833AB4,#F77737);padding:.38rem 1.1rem;border-radius:50px;font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:1.6rem;animation:glow 3s ease-in-out infinite;}
-@keyframes glow{0%,100%{box-shadow:0 0 0 rgba(131,58,180,0)}50%{box-shadow:0 0 28px 5px rgba(131,58,180,.4)}}
-.hero h1{font-family:'Syne',sans-serif;font-size:clamp(3rem,11vw,7.5rem);font-weight:800;line-height:.92;color:var(--branco);margin-bottom:1rem;}
-.hero-sub{font-size:clamp(1rem,2.5vw,1.25rem);color:var(--texto2);max-width:570px;margin:0 auto 2.2rem;line-height:1.7;}
+/* ── HERO ── */
+.hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:4rem 1.4rem;position:relative;overflow:hidden;}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 55% 40% at 20% 50%,rgba(131,58,180,.18) 0%,transparent 65%),radial-gradient(ellipse 55% 40% at 80% 50%,rgba(24,119,242,.18) 0%,transparent 65%);}
+.ig-badge{display:inline-flex;align-items:center;gap:.5rem;background:linear-gradient(90deg,#833AB4,#F77737);padding:.4rem 1.2rem;border-radius:50px;font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:1.6rem;animation:glow 3s ease-in-out infinite;}
+@keyframes glow{0%,100%{box-shadow:0 0 0 rgba(131,58,180,0)}50%{box-shadow:0 0 30px 6px rgba(131,58,180,.4)}}
+.hero h1{font-family:'Syne',sans-serif;font-size:clamp(3rem,11vw,7.5rem);font-weight:800;line-height:.92;color:var(--branco);margin-bottom:1rem;position:relative;z-index:1;}
+.hero-sub{font-size:clamp(1rem,2.5vw,1.25rem);color:var(--texto2);max-width:570px;margin:0 auto 2.2rem;line-height:1.7;position:relative;z-index:1;}
 .hero-sub b{color:var(--texto);}
-.hero-stats{display:flex;gap:2rem;margin-top:2.2rem;flex-wrap:wrap;justify-content:center;}
+.hero-stats{display:flex;gap:2.5rem;margin-top:2.2rem;flex-wrap:wrap;justify-content:center;position:relative;z-index:1;}
 .stat-num{font-family:'Syne',sans-serif;font-size:1.8rem;font-weight:800;background:linear-gradient(90deg,#1877F2,#833AB4);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
 .stat-label{font-size:.78rem;color:var(--texto2);}
 
-/* ERRO CARDS */
-.erros-section{background:var(--cinza);}
-.erros-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.2rem;margin-top:2.5rem;}
-.erro-card{background:var(--cinza2);border:1px solid rgba(231,76,60,.15);border-radius:14px;padding:1.5rem;transition:border-color .2s,transform .2s;}
-.erro-card:hover{border-color:rgba(231,76,60,.4);transform:translateY(-3px);}
-.erro-num{font-family:'Syne',sans-serif;font-size:2.8rem;font-weight:800;color:rgba(231,76,60,.2);line-height:1;margin-bottom:.5rem;}
-.erro-card h3{font-size:1rem;font-weight:600;color:var(--branco);margin-bottom:.4rem;}
-.erro-card p{font-size:.9rem;color:var(--texto2);line-height:1.6;}
+/* ── DOR ── */
+.dor-section{background:var(--cinza);}
+.dor-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.2rem;margin-top:2.5rem;}
+.dor-card{background:var(--cinza2);border:1px solid rgba(231,76,60,.12);border-radius:14px;padding:1.5rem;transition:border-color .2s,transform .2s;}
+.dor-card:hover{border-color:rgba(231,76,60,.35);transform:translateY(-3px);}
+.dor-num{font-family:'Syne',sans-serif;font-size:2.8rem;font-weight:800;color:rgba(231,76,60,.2);line-height:1;margin-bottom:.5rem;}
+.dor-card h3{font-size:1rem;font-weight:700;color:var(--branco);margin-bottom:.4rem;}
+.dor-card p{font-size:.9rem;color:var(--texto2);line-height:1.6;}
 
-/* COPA */
+/* ── COPA ── */
 .copa-section{background:var(--preto);}
-.copa-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;margin-top:2.5rem;}
+.copa-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:1rem;margin-top:2.5rem;}
 .copa-card{border-radius:14px;padding:1.5rem;border:1px solid rgba(255,255,255,.06);transition:transform .2s;}
 .copa-card:hover{transform:translateY(-4px);}
 .copa-card.c{background:linear-gradient(135deg,rgba(131,58,180,.15),rgba(131,58,180,.04));border-color:rgba(131,58,180,.3);}
@@ -83,637 +77,523 @@ h2{font-family:'Syne',sans-serif;font-size:clamp(1.8rem,5vw,3rem);font-weight:80
 .copa-card p{font-size:.85rem;color:var(--texto2);line-height:1.6;}
 .copa-day{font-size:.74rem;color:var(--texto2);margin-top:.5rem;font-weight:600;}
 
-/* FUNIL STEPS */
-.funil-section{background:var(--cinza);}
-.funil-steps{margin-top:2.5rem;}
-.funil-step{display:flex;gap:1.4rem;margin-bottom:1.2rem;align-items:flex-start;}
-.step-num{width:50px;height:50px;min-width:50px;border-radius:50%;font-family:'Syne',sans-serif;font-size:1.3rem;font-weight:800;display:flex;align-items:center;justify-content:center;color:#fff;}
-.sn-azul{background:linear-gradient(135deg,#1877F2,#833AB4);}
-.sn-verde{background:linear-gradient(135deg,#00C87A,#0077CC);}
-.sn-laranja{background:linear-gradient(135deg,#F77737,#F5A623);}
-.step-body h3{font-size:1rem;font-weight:700;color:var(--branco);margin-bottom:.3rem;}
-.step-body p{font-size:.9rem;color:var(--texto2);line-height:1.6;}
-code{background:rgba(24,119,242,.15);color:#60A5FA;border-radius:4px;padding:.1rem .45rem;font-size:.82rem;font-family:monospace;}
-code.v{background:rgba(0,200,122,.15);color:#34D399;}
-code.o{background:rgba(247,119,55,.15);color:#FB923C;}
-.connector{width:2px;height:16px;margin-left:24px;background:linear-gradient(to bottom,rgba(24,119,242,.4),transparent);}
+/* ── BENEFICIOS ── */
+.benef-section{background:var(--cinza);}
+.benef-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.2rem;margin-top:2.5rem;}
+.benef-card{background:var(--cinza2);border-radius:14px;padding:1.5rem;border:1px solid rgba(255,255,255,.07);}
+.benef-check{font-size:1.4rem;margin-bottom:.7rem;}
+.benef-card h3{font-size:.95rem;font-weight:700;color:var(--branco);margin-bottom:.35rem;}
+.benef-card p{font-size:.85rem;color:var(--texto2);line-height:1.6;}
 
-/* ══ CHECKOUT ZONE ══ */
-.checkout-section{background:var(--preto);position:relative;}
-.checkout-section::before{content:'CHECKOUT';position:absolute;top:2.5rem;left:50%;transform:translateX(-50%);font-family:'Syne',sans-serif;font-size:.65rem;font-weight:800;letter-spacing:.25em;color:rgba(24,119,242,.3);text-transform:uppercase;}
+/* ── DEPOIMENTOS ── */
+.depoi-section{background:var(--preto);}
+.depoi-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.2rem;margin-top:2.5rem;}
+.depoi-card{background:var(--cinza2);border:1px solid rgba(255,255,255,.07);border-radius:14px;padding:1.5rem;}
+.depoi-stars{color:var(--dourado);font-size:1rem;margin-bottom:.8rem;letter-spacing:.1em;}
+.depoi-text{font-size:.9rem;color:var(--texto2);line-height:1.7;margin-bottom:1rem;font-style:italic;}
+.depoi-name{font-size:.85rem;font-weight:700;color:var(--branco);}
+.depoi-cargo{font-size:.78rem;color:var(--texto2);}
+
+/* ── GARANTIA ── */
+.garantia-section{background:var(--cinza);text-align:center;}
+.garantia-box{max-width:600px;margin:2rem auto 0;background:var(--cinza2);border:1px solid rgba(0,200,122,.25);border-radius:20px;padding:2.5rem 2rem;}
+.garantia-icon{font-size:4rem;margin-bottom:1rem;}
+.garantia-box h3{font-family:'Syne',sans-serif;font-size:1.5rem;font-weight:800;color:var(--branco);margin-bottom:.8rem;}
+.garantia-box p{color:var(--texto2);font-size:.95rem;line-height:1.7;}
+
+/* ── CHECKOUT ── */
+.checkout-section{background:var(--preto);}
 .checkout-box{background:var(--cinza2);border:1px solid rgba(24,119,242,.25);border-radius:20px;padding:2rem;margin-top:2.5rem;position:relative;overflow:hidden;}
 .checkout-box::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#1877F2,#833AB4,#F77737);}
-.checkout-title{font-family:'Syne',sans-serif;font-size:1.3rem;font-weight:800;color:var(--branco);margin-bottom:1.2rem;display:flex;align-items:center;gap:.6rem;}
-.checkout-main{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;padding:1rem;background:rgba(24,119,242,.06);border:1px solid rgba(24,119,242,.15);border-radius:12px;margin-bottom:1.2rem;}
+.checkout-title{font-family:'Syne',sans-serif;font-size:1.2rem;font-weight:800;color:var(--branco);margin-bottom:1.2rem;}
+.prod-row{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;padding:1rem;background:rgba(24,119,242,.06);border:1px solid rgba(24,119,242,.15);border-radius:12px;margin-bottom:1.2rem;}
 .prod-info{display:flex;align-items:center;gap:1rem;}
-.prod-thumb{width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,#1877F2,#833AB4);display:flex;align-items:center;justify-content:center;font-size:1.5rem;}
+.prod-thumb{width:52px;height:52px;border-radius:10px;background:linear-gradient(135deg,#1877F2,#833AB4);display:flex;align-items:center;justify-content:center;font-size:1.4rem;}
 .prod-name{font-weight:700;color:var(--branco);font-size:.95rem;}
 .prod-sub{font-size:.8rem;color:var(--texto2);margin-top:.1rem;}
-.prod-price{font-family:'Syne',sans-serif;font-size:1.6rem;font-weight:800;color:#60A5FA;}
 .prod-de{font-size:.8rem;color:var(--texto2);text-decoration:line-through;text-align:right;}
-
-/* ORDER BUMP */
-.order-bump{border:2px dashed rgba(0,200,122,.4);border-radius:14px;padding:1.2rem 1.4rem;background:rgba(0,200,122,.05);margin-bottom:1.2rem;position:relative;overflow:hidden;}
+.prod-price{font-family:'Syne',sans-serif;font-size:1.6rem;font-weight:800;color:#60A5FA;}
+.order-bump{border:2px dashed rgba(0,200,122,.4);border-radius:14px;padding:1.2rem 1.4rem;background:rgba(0,200,122,.05);margin-bottom:1.2rem;position:relative;}
 .ob-badge{position:absolute;top:0;right:0;background:var(--verde);color:#000;font-size:.68rem;font-weight:800;text-transform:uppercase;letter-spacing:.1em;padding:.3rem .8rem;border-radius:0 0 0 10px;}
-.ob-check-row{display:flex;align-items:flex-start;gap:1rem;}
-.ob-checkbox{width:24px;height:24px;min-width:24px;border-radius:6px;border:2px solid var(--verde);cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s;margin-top:.1rem;}
-.ob-checkbox.checked{background:var(--verde);}
+.ob-row{display:flex;align-items:flex-start;gap:1rem;}
+.ob-chk{width:24px;height:24px;min-width:24px;border-radius:6px;border:2px solid var(--verde);cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s;margin-top:.1rem;font-size:.9rem;font-weight:800;color:#000;}
+.ob-chk.on{background:var(--verde);}
 .ob-title{font-weight:700;color:var(--verde);font-size:1rem;margin-bottom:.3rem;}
 .ob-desc{font-size:.88rem;color:var(--texto2);line-height:1.6;}
-.ob-price-row{display:flex;align-items:center;gap:.8rem;margin-top:.8rem;}
+.ob-price-row{display:flex;align-items:center;gap:.8rem;margin-top:.7rem;flex-wrap:wrap;}
 .ob-de{font-size:.82rem;color:var(--texto2);text-decoration:line-through;}
 .ob-por{font-family:'Syne',sans-serif;font-size:1.1rem;font-weight:800;color:var(--verde);}
-.ob-economy{font-size:.75rem;color:var(--verde);background:rgba(0,200,122,.15);padding:.2rem .6rem;border-radius:50px;}
-
-.checkout-total{background:var(--cinza3);border-radius:10px;padding:1rem 1.2rem;display:flex;justify-content:space-between;align-items:center;margin-bottom:1.2rem;flex-wrap:wrap;gap:.5rem;}
-.total-label{font-size:.85rem;color:var(--texto2);}
+.ob-save{font-size:.74rem;color:var(--verde);background:rgba(0,200,122,.12);padding:.2rem .6rem;border-radius:50px;}
+.total-row{background:var(--cinza3);border-radius:10px;padding:1rem 1.2rem;display:flex;justify-content:space-between;align-items:center;margin-bottom:1.2rem;flex-wrap:wrap;gap:.5rem;}
+.total-lbl{font-size:.85rem;color:var(--texto2);}
+.total-desc{font-size:.75rem;color:var(--texto2);margin-top:.1rem;}
 .total-val{font-family:'Syne',sans-serif;font-size:1.6rem;font-weight:800;color:var(--branco);}
-.checkout-cta{display:block;width:100%;text-align:center;padding:1.1rem;border-radius:10px;background:linear-gradient(135deg,#1877F2,#833AB4);color:#fff;font-family:'Syne',sans-serif;font-size:1rem;font-weight:800;text-transform:uppercase;letter-spacing:.07em;border:none;cursor:pointer;transition:all .25s;}
-.checkout-cta:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(131,58,180,.4);}
-.checkout-safe{text-align:center;font-size:.78rem;color:var(--texto2);margin-top:.8rem;display:flex;align-items:center;justify-content:center;gap:.4rem;}
+.safe-row{text-align:center;font-size:.78rem;color:var(--texto2);margin-top:.8rem;display:flex;align-items:center;justify-content:center;gap:.5rem;flex-wrap:wrap;}
 
-/* UPSELL PAGES */
-.upsell-page{padding:5rem 1.2rem;display:none;}
+/* ── UPSELLS ── */
+.upsell-page{display:none;padding:5rem 1.4rem;}
 .upsell-page.visible{display:block;}
-.upsell-page.up1-bg{background:linear-gradient(160deg,#050D10,#0A1A18);}
-.upsell-page.up2-bg{background:linear-gradient(160deg,#140808,#1A0A10);}
-.upsell-page.up3-bg{background:linear-gradient(160deg,#0D0514,#180A25);}
-.upsell-box-r{border:1px solid rgba(155,39,175,.3);}
-.upsell-box-r::before{background:linear-gradient(90deg,#9B27AF,#E91E8C)!important;}
-.upsell-cta-r{background:linear-gradient(135deg,#9B27AF,#E91E8C);}
-.upsell-cta-r:hover{box-shadow:0 10px 30px rgba(155,39,175,.4);transform:translateY(-2px);}
-.por-r{color:#C084FC;}
+.up1-bg{background:linear-gradient(160deg,#050D10,#0A1A18);}
+.up2-bg{background:linear-gradient(160deg,#140808,#1A0A10);}
+.up3-bg{background:linear-gradient(160deg,#0D0514,#180A25);}
 .upsell-hero{text-align:center;max-width:700px;margin:0 auto 3rem;}
-.upsell-hero .wait{font-family:'Syne',sans-serif;font-size:.75rem;font-weight:800;letter-spacing:.2em;text-transform:uppercase;padding:.35rem 1rem;border-radius:50px;display:inline-block;margin-bottom:1.2rem;}
-.wait-v{background:rgba(0,200,122,.12);color:var(--verde);border:1px solid rgba(0,200,122,.3);}
-.wait-o{background:rgba(247,119,55,.12);color:var(--laranja);border:1px solid rgba(247,119,55,.3);}
-.upsell-hero h2{font-family:'Syne',sans-serif;font-size:clamp(1.8rem,5vw,3rem);font-weight:800;color:var(--branco);margin-bottom:1rem;line-height:1.05;}
+.wait-badge{font-family:'Syne',sans-serif;font-size:.72rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase;padding:.35rem 1rem;border-radius:50px;display:inline-block;margin-bottom:1.2rem;}
+.wait-v{background:rgba(0,200,122,.1);color:var(--verde);border:1px solid rgba(0,200,122,.3);}
+.wait-o{background:rgba(247,119,55,.1);color:var(--laranja);border:1px solid rgba(247,119,55,.3);}
+.wait-r{background:rgba(155,39,175,.1);color:#C084FC;border:1px solid rgba(155,39,175,.3);}
+.upsell-hero h2{font-family:'Syne',sans-serif;font-size:clamp(1.8rem,5vw,2.8rem);font-weight:800;color:var(--branco);margin-bottom:1rem;line-height:1.05;}
 .upsell-hero p{color:var(--texto2);font-size:1rem;line-height:1.7;max-width:560px;margin:0 auto 2rem;}
 .upsell-box{background:var(--cinza2);border-radius:20px;padding:2rem;max-width:600px;margin:0 auto;position:relative;overflow:hidden;}
-.upsell-box-v{border:1px solid rgba(0,200,122,.3);}
-.upsell-box-o{border:1px solid rgba(247,119,55,.3);}
 .upsell-box::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;}
-.upsell-box-v::before{background:linear-gradient(90deg,#00C87A,#1877F2);}
-.upsell-box-o::before{background:linear-gradient(90deg,#F77737,#F5A623);}
+.ub-v{border:1px solid rgba(0,200,122,.3);}.ub-v::before{background:linear-gradient(90deg,#00C87A,#1877F2);}
+.ub-o{border:1px solid rgba(247,119,55,.3);}.ub-o::before{background:linear-gradient(90deg,#F77737,#F5A623);}
+.ub-r{border:1px solid rgba(155,39,175,.3);}.ub-r::before{background:linear-gradient(90deg,#9B27AF,#E91E8C);}
+.upsell-icon{text-align:center;font-size:3rem;margin-bottom:.6rem;}
+.upsell-name{font-family:'Syne',sans-serif;font-size:1.4rem;font-weight:800;color:var(--branco);text-align:center;}
+.upsell-sub{color:var(--texto2);font-size:.88rem;text-align:center;margin:.3rem 0 1.4rem;}
 .upsell-items{list-style:none;margin-bottom:1.5rem;}
 .upsell-items li{display:flex;align-items:flex-start;gap:.8rem;padding:.55rem 0;border-bottom:1px solid rgba(255,255,255,.04);font-size:.9rem;color:var(--texto2);}
 .upsell-items li:last-child{border-bottom:none;}
-.upsell-check{font-size:1rem;}
 .upsell-price-row{display:flex;align-items:center;justify-content:center;gap:1rem;margin-bottom:1.2rem;flex-wrap:wrap;}
-.upsell-de{color:var(--texto2);text-decoration:line-through;font-size:.95rem;}
-.upsell-por{font-family:'Syne',sans-serif;font-size:2.5rem;font-weight:800;}
-.por-v{color:var(--verde);}
-.por-o{color:var(--laranja);}
-.upsell-cta{display:block;width:100%;text-align:center;padding:1.1rem;border-radius:10px;font-family:'Syne',sans-serif;font-size:1rem;font-weight:800;text-transform:uppercase;letter-spacing:.07em;border:none;cursor:pointer;transition:all .25s;color:#fff;}
-.upsell-cta-v{background:linear-gradient(135deg,#00C87A,#1877F2);}
-.upsell-cta-v:hover{box-shadow:0 10px 30px rgba(0,200,122,.4);transform:translateY(-2px);}
-.upsell-cta-o{background:linear-gradient(135deg,#F77737,#F5A623);}
-.upsell-cta-o:hover{box-shadow:0 10px 30px rgba(247,119,55,.4);transform:translateY(-2px);}
-.upsell-skip{display:block;text-align:center;margin-top:.8rem;font-size:.78rem;color:var(--texto2);cursor:pointer;text-decoration:underline;text-underline-offset:3px;}
-.upsell-skip:hover{color:var(--texto);}
+.u-de{color:var(--texto2);text-decoration:line-through;font-size:.95rem;}
+.u-por{font-family:'Syne',sans-serif;font-size:2.5rem;font-weight:800;}
+.u-por-v{color:var(--verde);}.u-por-o{color:var(--laranja);}.u-por-r{color:#C084FC;}
+.u-save{font-size:.75rem;padding:.2rem .6rem;border-radius:50px;}
+.u-save-v{color:var(--verde);background:rgba(0,200,122,.12);}
+.u-save-o{color:var(--laranja);background:rgba(247,119,55,.12);}
+.u-save-r{color:#C084FC;background:rgba(155,39,175,.12);}
+.ds-box{background:var(--cinza3);border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:1.4rem;max-width:600px;margin:1.4rem auto 0;text-align:center;display:none;}
+.ds-box.visible{display:block;}
+.ds-box h4{font-weight:700;color:var(--branco);margin-bottom:.5rem;}
+.ds-box p{font-size:.85rem;color:var(--texto2);margin-bottom:.8rem;line-height:1.6;}
+.ds-price{font-family:'Syne',sans-serif;font-size:1.8rem;font-weight:800;margin-bottom:.2rem;}
+.ds-sub{font-size:.78rem;color:var(--texto2);margin-bottom:1rem;}
 
-/* DOWNSELL */
-.downsell-box{background:var(--cinza3);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:1.5rem;max-width:600px;margin:1.5rem auto 0;text-align:center;display:none;}
-.downsell-box.visible{display:block;}
-.downsell-box h4{font-weight:700;color:var(--branco);margin-bottom:.5rem;font-size:1rem;}
-.downsell-box p{font-size:.85rem;color:var(--texto2);margin-bottom:1rem;line-height:1.6;}
-.ds-price{font-family:'Syne',sans-serif;font-size:1.8rem;font-weight:800;color:var(--dourado);}
-.ds-parcel{font-size:.8rem;color:var(--texto2);margin-bottom:1rem;}
-
-/* THANK YOU */
-.thankyou-page{display:none;padding:5rem 1.2rem;text-align:center;min-height:100vh;align-items:center;flex-direction:column;justify-content:center;}
-.thankyou-page.visible{display:flex;}
-.ty-icon{font-size:4rem;margin-bottom:1.5rem;}
-.ty-box{background:var(--cinza2);border:1px solid rgba(255,255,255,.08);border-radius:20px;padding:2rem;max-width:560px;margin:2rem auto 0;text-align:left;}
-.ty-items li{display:flex;align-items:flex-start;gap:.8rem;padding:.5rem 0;border-bottom:1px solid rgba(255,255,255,.04);font-size:.9rem;color:var(--texto2);}
+/* ── OBRIGADO ── */
+.ty-page{display:none;min-height:100vh;padding:5rem 1.4rem;align-items:center;justify-content:center;flex-direction:column;text-align:center;}
+.ty-page.visible{display:flex;}
+.ty-icon{font-size:4.5rem;margin-bottom:1.5rem;}
+.ty-box{background:var(--cinza2);border:1px solid rgba(255,255,255,.08);border-radius:20px;padding:2rem;max-width:540px;margin:2rem auto 0;text-align:left;}
+.ty-items{list-style:none;}
+.ty-items li{display:flex;align-items:flex-start;gap:.8rem;padding:.55rem 0;border-bottom:1px solid rgba(255,255,255,.04);font-size:.9rem;color:var(--texto2);}
 .ty-items li:last-child{border-bottom:none;}
+.ty-note{color:var(--texto2);font-size:.88rem;margin-top:1.5rem;line-height:1.7;max-width:540px;}
 
-/* COPIES / ESTRATEGIA SECOES */
-.copies-section{background:var(--preto);}
-.copy-card{background:var(--cinza2);border:1px solid rgba(255,255,255,.07);border-radius:14px;overflow:hidden;margin-bottom:1.2rem;}
-.copy-header{background:linear-gradient(90deg,rgba(24,119,242,.12),rgba(131,58,180,.12));padding:.8rem 1.2rem;font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--azul);border-bottom:1px solid rgba(255,255,255,.05);}
-.copy-body{padding:1.2rem 1.4rem;font-size:.93rem;color:var(--texto2);line-height:1.8;}
-.copy-body b{color:var(--texto);}
-
-/* OBJECOES */
+/* ── OBJÇÕES ── */
 .obj-section{background:var(--cinza);}
 .obj-item{background:var(--cinza2);border-left:3px solid var(--dourado);border-radius:0 10px 10px 0;padding:1.1rem 1.4rem;margin-bottom:1rem;}
 .obj-q{color:var(--dourado);font-weight:700;font-size:.93rem;margin-bottom:.35rem;}
 .obj-a{color:var(--texto2);font-size:.88rem;line-height:1.6;}
 
-/* PRECO FINAL */
+/* ── PRECO ── */
 .preco-section{background:var(--preto);text-align:center;}
 .preco-box{max-width:460px;margin:2.5rem auto 0;background:var(--cinza2);border:1px solid rgba(24,119,242,.3);border-radius:20px;padding:2.5rem 2rem;position:relative;overflow:hidden;}
 .preco-box::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#1877F2,#833AB4,#F77737);}
-.preco-de{color:var(--texto2);text-decoration:line-through;font-size:.95rem;margin-bottom:.3rem;}
-.preco-val{font-family:'Syne',sans-serif;font-size:4.5rem;font-weight:800;background:linear-gradient(90deg,#1877F2,#833AB4);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1;}
-.preco-parc{color:var(--texto2);font-size:.85rem;margin-bottom:1.8rem;}
-.garantia{margin-top:1.2rem;font-size:.82rem;color:var(--texto2);display:flex;align-items:center;justify-content:center;gap:.4rem;}
+.p-de{color:var(--texto2);text-decoration:line-through;font-size:.95rem;margin-bottom:.3rem;}
+.p-por{font-family:'Syne',sans-serif;font-size:4.5rem;font-weight:800;background:linear-gradient(90deg,#1877F2,#833AB4);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1;}
+.p-parc{color:var(--texto2);font-size:.85rem;margin-bottom:1.8rem;}
+.p-garantia{margin-top:1.2rem;font-size:.82rem;color:var(--texto2);display:flex;align-items:center;justify-content:center;gap:.4rem;}
 
-/* URGENCIA */
-.urgencia-section{background:linear-gradient(135deg,#0D1A35,#1A0D2E);text-align:center;padding:3.5rem 1.2rem;border-top:1px solid rgba(131,58,180,.2);border-bottom:1px solid rgba(131,58,180,.2);}
-.urgencia-section p{color:var(--texto2);margin-top:.6rem;font-size:1rem;}
+/* ── URGENCIA ── */
+.urg-section{background:linear-gradient(135deg,#0D1A35,#1A0D2E);text-align:center;padding:3.5rem 1.4rem;border-top:1px solid rgba(131,58,180,.2);border-bottom:1px solid rgba(131,58,180,.2);}
+.urg-section p{color:var(--texto2);margin-top:.6rem;}
 
-/* ESTRATEGIA VISUAL */
-.estrategia-section{background:var(--cinza);}
-.estr-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.2rem;margin-top:2.5rem;}
-.estr-card{background:var(--cinza2);border-radius:14px;padding:1.5rem;border:1px solid rgba(255,255,255,.07);position:relative;}
-.estr-num{font-family:'Syne',sans-serif;font-size:3rem;font-weight:800;line-height:1;margin-bottom:.5rem;opacity:.2;}
-.estr-card h3{font-size:.95rem;font-weight:700;color:var(--branco);margin-bottom:.4rem;}
-.estr-card p{font-size:.85rem;color:var(--texto2);line-height:1.6;}
-.estr-card .badge{font-size:.68rem;font-weight:700;text-transform:uppercase;padding:.2rem .6rem;border-radius:50px;display:inline-block;margin-bottom:.6rem;}
-.badge-azul{background:rgba(24,119,242,.2);color:#60A5FA;}
-.badge-verde{background:rgba(0,200,122,.2);color:#34D399;}
-.badge-laranja{background:rgba(247,119,55,.2);color:#FB923C;}
-.badge-roxo{background:rgba(131,58,180,.2);color:#C084FC;}
+/* ── FOOTER ── */
+footer{background:var(--cinza);padding:2rem 1.4rem;text-align:center;font-size:.8rem;color:var(--texto2);border-top:1px solid rgba(255,255,255,.04);}
 
-footer{background:var(--cinza);padding:2rem 1.2rem;text-align:center;font-size:.8rem;color:var(--texto2);border-top:1px solid rgba(255,255,255,.04);}
-
-/* TABS */
-.tabs-nav{display:flex;gap:.5rem;margin-bottom:2rem;flex-wrap:wrap;}
-.tab-btn{padding:.5rem 1.1rem;border-radius:7px;font-size:.8rem;font-weight:600;border:1px solid rgba(255,255,255,.1);background:var(--cinza2);color:var(--texto2);cursor:pointer;transition:all .2s;}
-.tab-btn.active{border-color:rgba(24,119,242,.5);background:rgba(24,119,242,.12);color:#60A5FA;}
-.tab-content{display:none;}
-.tab-content.active{display:block;}
+/* ── PAGINAS ESCONDIDAS ── */
+.main-content{display:block;}
 </style>
 </head>
 <body>
 
-<!-- FUNIL MAP -->
-<div class="fmap-bar">
-  <div class="fmap">
-    <div class="fbox">Topo (Reels/Stories)</div>
-    <div class="farr">›</div>
-    <div class="fbox">Isca Gratuita</div>
-    <div class="farr">›</div>
-    <div class="fbox">Aquecimento</div>
-    <div class="farr">›</div>
-    <div class="fbox main">Oferta Principal</div>
-    <div class="farr">›</div>
-    <div class="fbox up1">Order Bump</div>
-    <div class="farr">›</div>
-    <div class="fbox up1">Upsell 1</div>
-    <div class="farr">›</div>
-    <div class="fbox up2">Upsell 2</div>
-    <div class="farr">›</div>
-    <div class="fbox">Obrigado</div>
-  </div>
-</div>
+<!-- ══════════════════════════════════════
+     PÁGINA PRINCIPAL DE VENDAS
+══════════════════════════════════════ -->
+<div class="main-content" id="main">
 
-<!-- HERO -->
-<section class="hero" id="topo">
-  <div style="position:relative;z-index:1;">
-    <div class="ig-badge">📲 Instagram &amp; Facebook — 2026</div>
-    <h1 style="position:relative;">DESTRAVAN<br><span class="g">DO VENDAS</span></h1>
-    <p class="hero-sub">O sistema completo para <b>vender todos os dias</b> no Instagram e Facebook — sem sorte, sem seguidores comprados e sem gastar em anúncios.</p>
-    <a href="#checkout" class="cta cta-azul">Quero Destravar Minhas Vendas →</a>
-    <div class="hero-stats">
-      <div class="stat"><div class="stat-num">+2.800</div><div class="stat-label">Vendedores treinados</div></div>
-      <div class="stat"><div class="stat-num">6</div><div class="stat-label">Capítulos práticos</div></div>
-      <div class="stat"><div class="stat-num">21</div><div class="stat-label">Scripts prontos</div></div>
-    </div>
-  </div>
-</section>
-
-<!-- ERROS -->
-<section class="erros-section">
-  <div class="container">
-    <div class="tag">Identifique o problema</div>
-    <h2>Por Que Suas Vendas Estão <span class="g">Travadas?</span></h2>
-    <p class="lead">Não é o algoritmo. Não é falta de seguidores. São 3 erros silenciosos que travam 9 em cada 10 vendedores.</p>
-    <div class="erros-grid">
-      <div class="erro-card"><div class="erro-num">01</div><h3>Posta sem intenção de venda</h3><p>Post bonito, legenda inspiradora, zero chamada para ação. O seguidor curte e vai embora — você não vendeu nada.</p></div>
-      <div class="erro-card"><div class="erro-num">02</div><h3>Fala do produto, não da transformação</h3><p>"Qualidade garantida." Isso não vende. O que vende é mostrar como a vida do cliente muda depois da compra.</p></div>
-      <div class="erro-card"><div class="erro-num">03</div><h3>Não faz follow-up</h3><p>80% das vendas acontecem após o 5º contato. Você está desistindo cedo demais.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- COPA -->
-<section class="copa-section">
-  <div class="container">
-    <div class="tag">A metodologia</div>
-    <h2>O Método <span class="g">C.O.P.A.</span></h2>
-    <p class="lead">4 tipos de conteúdo estratégico que cobrem toda a semana e guiam o seguidor até o pagamento.</p>
-    <div class="copa-grid">
-      <div class="copa-card c"><div class="copa-letra">C</div><h3>Conexão</h3><p>Bastidores, história, valores. Humaniza a marca e gera identificação.</p><div class="copa-day">Segunda e Terça</div></div>
-      <div class="copa-card o"><div class="copa-letra">O</div><h3>Oferta</h3><p>Resultados, depoimentos, demonstrações. Desperta desejo pelo produto.</p><div class="copa-day">Quarta e Quinta</div></div>
-      <div class="copa-card p"><div class="copa-letra">P</div><h3>Prova Social</h3><p>Prints de clientes, avaliações, antes e depois. Nada convence mais.</p><div class="copa-day">Sexta</div></div>
-      <div class="copa-card a"><div class="copa-letra">A</div><h3>Ação</h3><p>Oferta com urgência real, vagas limitadas, bônus por tempo.</p><div class="copa-day">Sábado e Domingo</div></div>
-    </div>
-  </div>
-</section>
-
-<!-- ESTRATEGIA FUNIL -->
-<section class="estrategia-section">
-  <div class="container">
-    <div class="tag">Como o funil funciona</div>
-    <h2>Funil Completo: Do <span class="g">Seguidor</span> ao Comprador</h2>
-    <p class="lead">8 etapas sequenciais — cada uma leva o cliente naturalmente para a próxima.</p>
-    <div class="estr-grid">
-      <div class="estr-card"><div class="estr-num" style="color:#1877F2">01</div><div class="badge badge-azul">Topo</div><h3>Atenção — Reels &amp; Stories</h3><p>Ganchos fortes nos primeiros 3 segundos atraem seguidores qualificados sem anúncio.</p></div>
-      <div class="estr-card"><div class="estr-num" style="color:#833AB4">02</div><div class="badge badge-roxo">Topo</div><h3>Isca Gratuita via Direct</h3><p>Material grátis (checklist ou mini-aula) em troca de contato. Seu lead entra na lista quente.</p></div>
-      <div class="estr-card"><div class="estr-num" style="color:#F77737">03</div><div class="badge badge-laranja">Meio</div><h3>Aquecimento 3-5 dias</h3><p>Sequência de mensagens: história, depoimento, revelação parcial do método e antecipação da oferta.</p></div>
-      <div class="estr-card"><div class="estr-num" style="color:#1877F2">04</div><div class="badge badge-azul">Fundo</div><h3>Oferta Principal — 72h</h3><p>Destravando Vendas com preço de lançamento, urgência real e garantia de 7 dias.</p></div>
-      <div class="estr-card"><div class="estr-num" style="color:#00C87A">05</div><div class="badge badge-verde">Upsell</div><h3>Order Bump no Checkout</h3><p>Scripts Matadores por +R$27 — caixa de seleção antes do pagamento. Adiciona sem atrito.</p></div>
-      <div class="estr-card"><div class="estr-num" style="color:#00C87A">06</div><div class="badge badge-verde">Upsell 1</div><h3>Pós-pagamento: Scripts</h3><p>Quem não marcou o order bump vê a oferta de Scripts Matadores isolada por R$37.</p></div>
-      <div class="estr-card"><div class="estr-num" style="color:#F77737">07</div><div class="badge badge-laranja">Upsell 2</div><h3>Reels que Vendem</h3><p>Oferta de Reels que Vendem por R$27 para quem aceitou o Upsell 1. Sequência lógica.</p></div>
-      <div class="estr-card"><div class="estr-num" style="color:#9B27AF">07b</div><div class="badge" style="background:rgba(155,39,175,.2);color:#C084FC">Upsell 3</div><h3>Stories que Faturam</h3><p>Fechamento do funil com Stories que Faturam por R$17 — para quem aceitou Upsell 2. Calendário semanal e 30 sequências prontas.</p></div>
-      <div class="estr-card"><div class="estr-num" style="color:#833AB4">08</div><div class="badge badge-roxo">Retenção</div><h3>Página de Obrigado + Bônus</h3><p>Bônus surpresa + pedido de depoimento + programa de indicação. Clientes viram promotores.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- ══ CHECKOUT INTERATIVO ══ -->
-<section class="checkout-section" id="checkout">
-  <div class="container">
-    <div class="tag">Simulação do Checkout</div>
-    <h2>Página de <span class="g">Checkout</span> + Order Bump</h2>
-    <p class="lead">Veja como fica o checkout real na Cakto com o Order Bump integrado. O checkbox aumenta o ticket médio sem criar atrito.</p>
-
-    <div class="checkout-box">
-      <div class="checkout-title">🛒 Resumo do Pedido</div>
-
-      <!-- Produto principal -->
-      <div class="checkout-main">
-        <div class="prod-info">
-          <div class="prod-thumb">📱</div>
-          <div>
-            <div class="prod-name">Destravando Vendas</div>
-            <div class="prod-sub">Instagram &amp; Facebook — Guia Completo</div>
-          </div>
-        </div>
-        <div style="text-align:right">
-          <div class="prod-de">R$ 127,00</div>
-          <div class="prod-price">R$ 47,00</div>
-        </div>
+  <!-- HERO -->
+  <section class="hero">
+    <div style="position:relative;z-index:1;text-align:center;">
+      <div class="ig-badge">📲 Instagram &amp; Facebook — 2026</div>
+      <h1>DESTRAVAN<br><span class="g">DO VENDAS</span></h1>
+      <p class="hero-sub">O sistema completo para <b>vender todos os dias</b> no Instagram e Facebook — sem sorte, sem seguidores comprados e sem gastar em anúncios.</p>
+      <a href="#checkout" class="cta cta-azul">Quero Destravar Minhas Vendas →</a>
+      <div class="hero-stats">
+        <div><div class="stat-num">+2.800</div><div class="stat-label">Vendedores treinados</div></div>
+        <div><div class="stat-num">6</div><div class="stat-label">Capítulos práticos</div></div>
+        <div><div class="stat-num">21</div><div class="stat-label">Scripts prontos</div></div>
       </div>
+    </div>
+  </section>
 
-      <!-- ORDER BUMP 1 -->
-      <div class="order-bump">
-        <div class="ob-badge">⚡ Adicione por apenas +R$27</div>
-        <div class="ob-check-row">
-          <div class="ob-checkbox" id="ob1" onclick="toggleOB(this,'total1','74','47')">
-            <span id="ob1-check" style="display:none;color:#000;font-weight:800;font-size:.9rem;">✓</span>
+  <!-- DOR -->
+  <section class="dor-section">
+    <div class="container">
+      <div class="tag-pill tag-azul">Você se identifica?</div>
+      <h2>Por Que Suas Vendas Estão <span class="g">Travadas?</span></h2>
+      <p class="lead">Não é o algoritmo. Não é falta de seguidores. São 3 erros silenciosos que travam 9 em cada 10 vendedores.</p>
+      <div class="dor-grid">
+        <div class="dor-card"><div class="dor-num">01</div><h3>Posta sem intenção de venda</h3><p>Post bonito, legenda inspiradora, zero chamada para ação. O seguidor curte e vai embora — você não vendeu nada.</p></div>
+        <div class="dor-card"><div class="dor-num">02</div><h3>Fala do produto, não da transformação</h3><p>"Qualidade garantida, entrega rápida." Isso não vende. O que vende é mostrar como a vida do cliente muda depois da compra.</p></div>
+        <div class="dor-card"><div class="dor-num">03</div><h3>Não faz follow-up</h3><p>80% das vendas acontecem após o 5º contato. Você está desistindo cedo demais — e perdendo dinheiro sem perceber.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COPA -->
+  <section class="copa-section">
+    <div class="container">
+      <div class="tag-pill tag-azul">A metodologia</div>
+      <h2>O Método <span class="g">C.O.P.A.</span></h2>
+      <p class="lead">4 tipos de conteúdo estratégico que cobrem toda a semana e conduzem o seguidor da curiosidade até o pagamento.</p>
+      <div class="copa-grid">
+        <div class="copa-card c"><div class="copa-letra">C</div><h3>Conexão</h3><p>Bastidores, história e valores. Humaniza a marca e gera identificação real.</p><div class="copa-day">Segunda e Terça</div></div>
+        <div class="copa-card o"><div class="copa-letra">O</div><h3>Oferta</h3><p>Resultados, depoimentos e demonstrações. Desperta desejo pelo produto.</p><div class="copa-day">Quarta e Quinta</div></div>
+        <div class="copa-card p"><div class="copa-letra">P</div><h3>Prova Social</h3><p>Prints de clientes, avaliações e antes e depois. Nada convence mais.</p><div class="copa-day">Sexta</div></div>
+        <div class="copa-card a"><div class="copa-letra">A</div><h3>Ação</h3><p>Oferta com urgência real, vagas limitadas e bônus por tempo determinado.</p><div class="copa-day">Sábado e Domingo</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BENEFÍCIOS -->
+  <section class="benef-section">
+    <div class="container">
+      <div class="tag-pill tag-azul">O que você leva</div>
+      <h2>Tudo que Está Dentro do <span class="g">Destravando Vendas</span></h2>
+      <div class="benef-grid">
+        <div class="benef-card"><div class="benef-check">📱</div><h3>Método C.O.P.A. Completo</h3><p>O sistema de conteúdo semanal que guia o seguidor até a compra — sem depender de inspiração do dia.</p></div>
+        <div class="benef-card"><div class="benef-check">🎬</div><h3>Como Usar Reels, Stories e Feed</h3><p>Cada formato tem uma função diferente no funil. Aprenda a usar os três de forma estratégica e complementar.</p></div>
+        <div class="benef-card"><div class="benef-check">💬</div><h3>Scripts de Abordagem no Direct</h3><p>Modelos prontos de mensagem para primeiro contato, contorno de objeções e follow-up com quem sumiu.</p></div>
+        <div class="benef-card"><div class="benef-check">🎯</div><h3>Como Criar Ofertas Irresistíveis</h3><p>A fórmula dos 6 elementos que transformam um produto comum em uma oferta que o cliente não consegue recusar.</p></div>
+        <div class="benef-card"><div class="benef-check">🔁</div><h3>Funil de 5 Etapas Completo</h3><p>Do primeiro contato ao pagamento — um processo previsível e replicável para qualquer nicho ou tamanho de audiência.</p></div>
+        <div class="benef-card"><div class="benef-check">📅</div><h3>Plano de Ação Semanal</h3><p>Calendário com o que postar cada dia da semana. Chega de acordar sem saber o que publicar.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEPOIMENTOS -->
+  <section class="depoi-section">
+    <div class="container">
+      <div class="tag-pill tag-azul">Quem já aplicou</div>
+      <h2>Resultados Reais de <span class="g">Vendedores Reais</span></h2>
+      <div class="depoi-grid">
+        <div class="depoi-card"><div class="depoi-stars">★★★★★</div><p class="depoi-text">"Eu postava todo dia e não vendia nada. Depois de aplicar o método C.O.P.A. por 2 semanas, fiz minha primeira venda pelo Instagram. Simples assim."</p><div class="depoi-name">Camila R.</div><div class="depoi-cargo">Vendedora de moda feminina</div></div>
+        <div class="depoi-card"><div class="depoi-stars">★★★★★</div><p class="depoi-text">"Os scripts de Direct mudaram tudo. Antes eu travava na hora de abordar. Agora uso o modelo e simplesmente funciona. Fechei 3 vendas na primeira semana."</p><div class="depoi-name">Lucas M.</div><div class="depoi-cargo">Prestador de serviços de TI</div></div>
+        <div class="depoi-card"><div class="depoi-stars">★★★★★</div><p class="depoi-text">"Fui cética no começo. Mas o guia é muito objetivo — sem enrolação. Em 21 dias já tinha um processo de vendas funcionando no meu perfil."</p><div class="depoi-name">Patrícia S.</div><div class="depoi-cargo">Consultora de beleza</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OBJEÇÕES -->
+  <section class="obj-section">
+    <div class="container">
+      <div class="tag-pill tag-azul">Suas dúvidas respondidas</div>
+      <h2>Isso Funciona <span class="g">Para Mim?</span></h2>
+      <div style="margin-top:2rem;">
+        <div class="obj-item"><div class="obj-q">"Já tentei e não funcionou pra mim"</div><div class="obj-a">A maioria tenta estratégias genéricas sem estrutura. O Destravando Vendas traz um método testado com mais de 2.800 vendedores, com scripts prontos e funil passo a passo — não é mais um conteúdo de teoria.</div></div>
+        <div class="obj-item"><div class="obj-q">"Não tenho muitos seguidores"</div><div class="obj-a">Seguidores não é o problema. Já vimos contas com 300 seguidores vendendo todos os dias porque aplicam a estratégia certa. O guia mostra como fazer isso com qualquer tamanho de audiência.</div></div>
+        <div class="obj-item"><div class="obj-q">"Não tenho dinheiro para anúncio"</div><div class="obj-a">O método é 100% orgânico — zero investimento em tráfego pago. Você aprende a gerar vendas com conteúdo certo, abordagem certa no Direct e funil certo.</div></div>
+        <div class="obj-item"><div class="obj-q">"Funciona para o meu nicho?"</div><div class="obj-a">O método C.O.P.A. e o funil de 5 etapas funcionam para qualquer produto ou serviço vendido pelas redes sociais — moda, beleza, cursos, consultoria, alimentos, artesanato e muito mais.</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GARANTIA -->
+  <section class="garantia-section">
+    <div class="container" style="text-align:center;">
+      <div class="tag-pill tag-verde">Risco zero</div>
+      <h2>Garantia de <span class="gv">7 Dias</span></h2>
+      <div class="garantia-box">
+        <div class="garantia-icon">🛡️</div>
+        <h3>Você não arrisca nada</h3>
+        <p>Aplique o método por 7 dias. Se não gostar dos resultados, não sentir que vale o investimento ou simplesmente mudar de ideia — devolvemos 100% do valor. Sem burocracia, sem perguntas, sem julgamento.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHECKOUT -->
+  <section class="checkout-section" id="checkout">
+    <div class="container">
+      <div class="tag-pill tag-azul">Garanta seu acesso</div>
+      <h2>Comece a <span class="g">Vender Hoje</span></h2>
+
+      <div class="checkout-box">
+        <div class="checkout-title">🛒 Seu Pedido</div>
+
+        <!-- Produto principal -->
+        <div class="prod-row">
+          <div class="prod-info">
+            <div class="prod-thumb">📱</div>
+            <div>
+              <div class="prod-name">Destravando Vendas</div>
+              <div class="prod-sub">Instagram &amp; Facebook — Guia Completo 2026</div>
+            </div>
           </div>
-          <div>
-            <div class="ob-title">🟢 SIM! Quero os Scripts Matadores</div>
-            <div class="ob-desc">47 scripts prontos para Direct e Messenger — abordagem, contorno de objeções e follow-up. Adicione ao seu pedido com <b>1 clique</b> e comece a usar hoje.</div>
-            <div class="ob-price-row">
-              <span class="ob-de">R$ 67,00</span>
-              <span class="ob-por">+ R$ 27,00</span>
-              <span class="ob-economy">Você economiza R$ 40</span>
+          <div style="text-align:right;">
+            <div class="prod-de">R$ 127,00</div>
+            <div class="prod-price">R$ 47,00</div>
+          </div>
+        </div>
+
+        <!-- Order Bump -->
+        <div class="order-bump">
+          <div class="ob-badge">⚡ Adicione por apenas +R$27</div>
+          <div class="ob-row">
+            <div class="ob-chk" id="ob-chk" onclick="toggleOB(this)"></div>
+            <div>
+              <div class="ob-title">🟢 SIM! Quero os Scripts Matadores</div>
+              <div class="ob-desc">47 scripts prontos para Direct e Messenger — abordagem, objeções e follow-up. Adicione ao seu pedido com 1 clique e comece a usar hoje mesmo.</div>
+              <div class="ob-price-row">
+                <span class="ob-de">R$ 67,00</span>
+                <span class="ob-por">+ R$ 27,00</span>
+                <span class="ob-save">Você economiza R$ 40</span>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <!-- TOTAL dinâmico -->
-      <div class="checkout-total">
-        <div>
-          <div class="total-label">Total do pedido</div>
-          <div style="font-size:.75rem;color:var(--texto2);margin-top:.2rem;" id="total-desc">1 produto</div>
+        <!-- Total -->
+        <div class="total-row">
+          <div>
+            <div class="total-lbl">Total do pedido</div>
+            <div class="total-desc" id="total-desc">1 produto</div>
+          </div>
+          <div class="total-val" id="total-val">R$ 47,00</div>
         </div>
-        <div class="total-val" id="total1">R$ 47,00</div>
+
+        <button class="cta-block cta-azul" onclick="goUpsell1()">🔒 Finalizar Compra com Segurança →</button>
+        <div class="safe-row">
+          <span>🔒 Pagamento seguro</span>
+          <span>·</span>
+          <span>🛡️ Garantia de 7 dias</span>
+          <span>·</span>
+          <span>⚡ Acesso imediato</span>
+        </div>
       </div>
-
-      <button class="checkout-cta" onclick="goUpsell()">🔒 Finalizar Compra com Segurança →</button>
-      <div class="checkout-safe">🔒 Pagamento 100% seguro &nbsp;|&nbsp; 🛡️ Garantia de 7 dias &nbsp;|&nbsp; ⚡ Acesso imediato</div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ══ UPSELL 1 — Scripts Matadores ══ -->
+  <!-- URGÊNCIA -->
+  <section class="urg-section">
+    <div class="container">
+      <h2 style="font-size:clamp(1.7rem,5vw,2.8rem);">⚡ Preço de Lançamento por <span class="g">72 horas</span></h2>
+      <p>Após esse período, o guia volta ao valor normal de R$ 127. Não perca.</p>
+      <a href="#checkout" class="cta cta-azul" style="margin-top:1.8rem;display:inline-block;">Garantir Agora →</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Destravando Vendas · Todos os direitos reservados</p>
+    <p style="margin-top:.4rem;">Produto vendido pela plataforma Cakto. Resultados podem variar de acordo com a dedicação de cada usuário.</p>
+  </footer>
+
+</div><!-- /main -->
+
+
+<!-- ══════════════════════════════════════
+     UPSELL 1 — Scripts Matadores
+══════════════════════════════════════ -->
 <div class="upsell-page up1-bg" id="upsell1">
   <div class="container">
     <div class="upsell-hero">
-      <span class="wait wait-v">⏳ Aguarde — Seu pedido foi confirmado!</span>
-      <h2>Você Acabou de Dar o Primeiro Passo.<br><span class="gv">Quer Dobrar os Resultados?</span></h2>
-      <p>Seu guia está garantido. Mas antes de liberar o acesso, temos uma oferta <b>exclusiva</b> que só aparece agora e nunca mais — especialmente para quem acabou de comprar.</p>
+      <span class="wait-badge wait-v">⏳ Seu pedido foi confirmado!</span>
+      <h2>Você Tem o Método.<br><span class="gv">Agora Precisa das Palavras Certas.</span></h2>
+      <p>Saber o que fazer é metade do caminho. A outra metade é saber <b>o que dizer</b> no Direct — na hora certa, do jeito certo. Esta é uma oferta exclusiva que só aparece agora.</p>
     </div>
-
-    <div class="upsell-box upsell-box-v">
-      <div style="text-align:center;margin-bottom:1.5rem;">
-        <div style="font-size:3rem;margin-bottom:.5rem;">🟢</div>
-        <div style="font-family:'Syne',sans-serif;font-size:1.4rem;font-weight:800;color:var(--branco);">Scripts Matadores</div>
-        <div style="color:var(--texto2);font-size:.88rem;margin-top:.3rem;">47 Scripts para Direct &amp; Messenger que Convertem</div>
-      </div>
-
-      <ul class="upsell-items">
-        <li><span class="upsell-check">✅</span> 12 scripts de primeiro contato para diferentes nichos</li>
-        <li><span class="upsell-check">✅</span> 15 scripts de contorno de objeções (preço, tempo, desconfiança)</li>
-        <li><span class="upsell-check">✅</span> 10 scripts de follow-up para clientes que sumiram</li>
-        <li><span class="upsell-check">✅</span> 5 scripts de fechamento para quem está "quase lá"</li>
-        <li><span class="upsell-check">✅</span> 5 scripts de pós-venda para gerar indicações</li>
-        <li><span class="upsell-check">✅</span> Guia de personalização: como adaptar cada script ao seu nicho</li>
+    <div class="upsell-box ub-v" style="text-align:center;">
+      <div class="upsell-icon">🟢</div>
+      <div class="upsell-name">Scripts Matadores</div>
+      <div class="upsell-sub">47 Scripts para Direct &amp; Messenger que Convertem</div>
+      <ul class="upsell-items" style="text-align:left;">
+        <li>✅ 12 scripts de primeiro contato para diferentes nichos</li>
+        <li>✅ 15 scripts de contorno de objeções (preço, tempo, desconfiança)</li>
+        <li>✅ 10 scripts de follow-up para clientes que sumiram</li>
+        <li>✅ 5 scripts de fechamento para quem está "quase lá"</li>
+        <li>✅ 5 scripts de pós-venda para gerar indicações</li>
+        <li>✅ Guia de personalização para adaptar ao seu nicho</li>
       </ul>
-
       <div class="upsell-price-row">
-        <span class="upsell-de">De R$ 67,00</span>
-        <span class="upsell-por por-v">R$ 37,00</span>
-        <span style="font-size:.75rem;color:var(--verde);background:rgba(0,200,122,.12);padding:.2rem .6rem;border-radius:50px;">Você economiza R$ 30</span>
+        <span class="u-de">De R$ 67,00</span>
+        <span class="u-por u-por-v">R$ 37,00</span>
+        <span class="u-save u-save-v">Você economiza R$ 30</span>
       </div>
-
-      <button class="upsell-cta upsell-cta-v" onclick="goUpsell2()">✅ Sim, quero os Scripts Matadores por R$37 →</button>
-      <span class="upsell-skip" onclick="showDownsell1()">Não, prefiro copiar scripts do zero por conta própria</span>
-
-      <!-- Downsell 1 -->
-      <div class="downsell-box" id="downsell1">
-        <h4>💛 Espera! Temos uma última proposta.</h4>
-        <p>Que tal levar os Scripts Matadores parcelado, por apenas <b>2x sem juros</b>?</p>
-        <div class="ds-price">2x de R$ 19,50</div>
-        <div class="ds-parcel">= R$ 39,00 no total</div>
-        <button class="upsell-cta upsell-cta-v" style="max-width:300px;margin:0 auto;" onclick="goUpsell2()">Quero parcelado →</button>
-        <br><span class="upsell-skip" onclick="goUpsell2()">Não, seguir sem os scripts</span>
-      </div>
+      <button class="cta-block cta-verde" onclick="goUpsell2(true)">✅ Sim, quero os Scripts Matadores por R$37 →</button>
+      <span class="skip" onclick="showDS1()">Não, prefiro copiar scripts do zero por conta própria</span>
+    </div>
+    <div class="ds-box" id="ds1">
+      <h4>💛 Espera! Uma última proposta.</h4>
+      <p>Leve os Scripts Matadores parcelado, sem juros.</p>
+      <div class="ds-price" style="color:var(--verde);">2x de R$ 19,50</div>
+      <div class="ds-sub">= R$ 39,00 no total</div>
+      <button class="cta-block cta-verde" style="max-width:320px;margin:0 auto;" onclick="goUpsell2(true)">Quero parcelado →</button>
+      <br><span class="skip" onclick="goUpsell2(false)">Não, seguir sem os scripts</span>
     </div>
   </div>
 </div>
 
-<!-- ══ UPSELL 2 — Reels que Vendem ══ -->
+
+<!-- ══════════════════════════════════════
+     UPSELL 2 — Reels que Vendem
+══════════════════════════════════════ -->
 <div class="upsell-page up2-bg" id="upsell2">
   <div class="container">
     <div class="upsell-hero">
-      <span class="wait wait-o">🔥 Última oferta exclusiva!</span>
+      <span class="wait-badge wait-o">🔥 Mais uma oferta exclusiva!</span>
       <h2>Scripts na Mão. Agora Vamos<br><span class="go">Atrair Mais Gente Para Ver?</span></h2>
-      <p>Scripts convertem quem já te segue. Reels trazem gente nova todos os dias para o seu perfil. Os dois juntos formam um ciclo de vendas automático.</p>
+      <p>Scripts convertem quem já te segue. Reels trazem gente nova todos os dias para o seu perfil. Os dois juntos formam um ciclo de vendas contínuo e automático.</p>
     </div>
-
-    <div class="upsell-box upsell-box-o">
-      <div style="text-align:center;margin-bottom:1.5rem;">
-        <div style="font-size:3rem;margin-bottom:.5rem;">🎬</div>
-        <div style="font-family:'Syne',sans-serif;font-size:1.4rem;font-weight:800;color:var(--branco);">Reels que Vendem</div>
-        <div style="color:var(--texto2);font-size:.88rem;margin-top:.3rem;">Método dos 3 Segundos para Viralizar e Vender</div>
-      </div>
-
-      <ul class="upsell-items">
-        <li><span class="upsell-check">✅</span> Estrutura dos 3 segundos: gancho, desenvolvimento e CTA</li>
-        <li><span class="upsell-check">✅</span> 20 roteiros prontos de Reels para diferentes nichos</li>
-        <li><span class="upsell-check">✅</span> Como usar legendas, áudio e cortes para prender a atenção</li>
-        <li><span class="upsell-check">✅</span> Frequência e horários: quando postar para maximizar o alcance</li>
-        <li><span class="upsell-check">✅</span> Como transformar visualizações em seguidores e seguidores em compradores</li>
-        <li><span class="upsell-check">✅</span> Checklist de revisão antes de publicar cada Reel</li>
+    <div class="upsell-box ub-o" style="text-align:center;">
+      <div class="upsell-icon">🎬</div>
+      <div class="upsell-name">Reels que Vendem</div>
+      <div class="upsell-sub">Método dos 3 Segundos para Viralizar e Vender</div>
+      <ul class="upsell-items" style="text-align:left;">
+        <li>✅ Estrutura dos 3 segundos: gancho, desenvolvimento e CTA</li>
+        <li>✅ 20 roteiros prontos de Reels para diferentes nichos</li>
+        <li>✅ Como usar legendas, áudio e cortes para prender a atenção</li>
+        <li>✅ Frequência e horários ideais para maximizar o alcance</li>
+        <li>✅ Como transformar visualizações em seguidores e compradores</li>
+        <li>✅ Checklist de revisão antes de publicar cada Reel</li>
       </ul>
-
       <div class="upsell-price-row">
-        <span class="upsell-de">De R$ 57,00</span>
-        <span class="upsell-por por-o">R$ 27,00</span>
-        <span style="font-size:.75rem;color:var(--laranja);background:rgba(247,119,55,.12);padding:.2rem .6rem;border-radius:50px;">Você economiza R$ 30</span>
+        <span class="u-de">De R$ 57,00</span>
+        <span class="u-por u-por-o">R$ 27,00</span>
+        <span class="u-save u-save-o">Você economiza R$ 30</span>
       </div>
-
-      <button class="upsell-cta upsell-cta-o" onclick="goUpsell3()">🎬 Sim, quero Reels que Vendem por R$27 →</button>
-      <span class="upsell-skip" onclick="showDownsell2()">Não, prefiro não ampliar meu alcance agora</span>
-
-      <!-- Downsell 2 -->
-      <div class="downsell-box" id="downsell2">
-        <h4>💛 Ok, mas que tal levar só os roteiros?</h4>
-        <p>20 roteiros prontos de Reels sem o método completo — por um valor ainda menor.</p>
-        <div class="ds-price">R$ 17,00</div>
-        <div class="ds-parcel">Acesso imediato, pagamento único</div>
-        <button class="upsell-cta upsell-cta-o" style="max-width:300px;margin:0 auto;" onclick="goUpsell3()">Quero só os roteiros →</button>
-        <br><span class="upsell-skip" onclick="goUpsell3()">Não, ir direto para o acesso</span>
-      </div>
+      <button class="cta-block cta-laranja" onclick="goUpsell3(true)">🎬 Sim, quero Reels que Vendem por R$27 →</button>
+      <span class="skip" onclick="showDS2()">Não, prefiro não ampliar meu alcance agora</span>
+    </div>
+    <div class="ds-box" id="ds2">
+      <h4>💛 Ok — que tal levar só os roteiros?</h4>
+      <p>20 roteiros prontos de Reels sem o método completo, por um valor ainda menor.</p>
+      <div class="ds-price" style="color:var(--laranja);">R$ 17,00</div>
+      <div class="ds-sub">Acesso imediato, pagamento único</div>
+      <button class="cta-block cta-laranja" style="max-width:320px;margin:0 auto;" onclick="goUpsell3(true)">Quero só os roteiros →</button>
+      <br><span class="skip" onclick="goUpsell3(false)">Não, ir para meu acesso agora</span>
     </div>
   </div>
 </div>
 
 
-<!-- ══ UPSELL 3 — Stories que Faturam ══ -->
+<!-- ══════════════════════════════════════
+     UPSELL 3 — Stories que Faturam
+══════════════════════════════════════ -->
 <div class="upsell-page up3-bg" id="upsell3">
   <div class="container">
     <div class="upsell-hero">
-      <span class="wait" style="background:rgba(155,39,175,.12);color:#C084FC;border:1px solid rgba(155,39,175,.3);">🚀 Oferta Final — Exclusiva para Você!</span>
-      <h2>Você Tem o Método e os Conteúdos.<br><span style="background:linear-gradient(90deg,#9B27AF,#E91E8C);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Agora Venda Todos os Dias pelo Stories.</span></h2>
-      <p>Destravando Vendas te dá a estratégia. Scripts te dão as palavras. Reels te trazem alcance. Os <b>Stories te dão vendas diárias</b> — porque são vistos por até 70% dos seus seguidores todo dia.</p>
+      <span class="wait-badge wait-r">🚀 Oferta final — exclusiva para você!</span>
+      <h2>Você Tem Tudo.<br><span class="gr">Agora Venda Todos os Dias pelo Stories.</span></h2>
+      <p>Stories são vistos por até <b>70% dos seus seguidores todos os dias</b>. É o canal mais direto e pessoal que existe — e com 30 sequências prontas você nunca mais fica sem saber o que postar.</p>
     </div>
-    <div class="upsell-box upsell-box-r">
-      <div style="text-align:center;margin-bottom:1.5rem;">
-        <div style="font-size:3rem;margin-bottom:.5rem;">📲</div>
-        <div style="font-family:'Syne',sans-serif;font-size:1.4rem;font-weight:800;color:var(--branco);">Stories que Faturam</div>
-        <div style="color:var(--texto2);font-size:.88rem;margin-top:.3rem;">30 Sequências Prontas + Calendário Semanal Completo</div>
-      </div>
-      <ul class="upsell-items">
-        <li><span class="upsell-check">✅</span> A anatomia do Story perfeito — os 4 elementos inegociáveis</li>
-        <li><span class="upsell-check">✅</span> 6 sequências estratégicas com roteiros prontos (Dor, Bastidor, Prova, Urgência e mais)</li>
-        <li><span class="upsell-check">✅</span> 10 gatilhos mentais para usar com ética e eficácia nos Stories</li>
-        <li><span class="upsell-check">✅</span> Calendário semanal completo — o que postar cada dia</li>
-        <li><span class="upsell-check">✅</span> Melhores horários para postar e maximizar visualizações</li>
-        <li><span class="upsell-check">✅</span> Métricas que importam: como saber se seu Story está convertendo</li>
+    <div class="upsell-box ub-r" style="text-align:center;">
+      <div class="upsell-icon">📲</div>
+      <div class="upsell-name">Stories que Faturam</div>
+      <div class="upsell-sub">30 Sequências Prontas + Calendário Semanal Completo</div>
+      <ul class="upsell-items" style="text-align:left;">
+        <li>✅ A anatomia do Story perfeito — os 4 elementos inegociáveis</li>
+        <li>✅ 6 sequências estratégicas com roteiros prontos (Dor, Bastidor, Prova, Urgência e mais)</li>
+        <li>✅ 10 gatilhos mentais para usar com ética e eficácia</li>
+        <li>✅ Calendário semanal completo — o que postar cada dia</li>
+        <li>✅ Melhores horários para maximizar visualizações</li>
+        <li>✅ Métricas que importam: como saber se seu Story está convertendo</li>
       </ul>
       <div class="upsell-price-row">
-        <span class="upsell-de">De R$ 47,00</span>
-        <span class="upsell-por por-r">R$ 17,00</span>
-        <span style="font-size:.75rem;color:#C084FC;background:rgba(155,39,175,.12);padding:.2rem .6rem;border-radius:50px;">Você economiza R$ 30</span>
+        <span class="u-de">De R$ 47,00</span>
+        <span class="u-por u-por-r">R$ 17,00</span>
+        <span class="u-save u-save-r">Você economiza R$ 30</span>
       </div>
-      <button class="upsell-cta upsell-cta-r" onclick="goThankyou(true)">📲 Sim, quero Stories que Faturam por R$17 →</button>
-      <span class="upsell-skip" onclick="showDownsell3()">Não, prefiro ir direto para o meu acesso</span>
-      <div class="downsell-box" id="downsell3">
-        <h4>💜 Última chance — só o calendário por R$9</h4>
-        <p>Leve apenas o <b>Calendário Semanal de Stories</b> com os roteiros prontos de cada dia da semana.</p>
-        <div class="ds-price" style="color:#C084FC;">R$ 9,00</div>
-        <div class="ds-parcel">Acesso imediato, pagamento único</div>
-        <button class="upsell-cta upsell-cta-r" style="max-width:300px;margin:0 auto;" onclick="goThankyou(true)">Quero só o calendário →</button>
-        <br><span class="upsell-skip" onclick="goThankyou(false)">Não, ir para meu acesso agora</span>
-      </div>
+      <button class="cta-block cta-roxo" onclick="goTY(true)">📲 Sim, quero Stories que Faturam por R$17 →</button>
+      <span class="skip" onclick="showDS3()">Não, prefiro ir direto para o meu acesso</span>
+    </div>
+    <div class="ds-box" id="ds3">
+      <h4>💜 Última chance — só o calendário por R$9</h4>
+      <p>Leve apenas o <b>Calendário Semanal de Stories</b> com roteiros prontos para cada dia da semana.</p>
+      <div class="ds-price" style="color:#C084FC;">R$ 9,00</div>
+      <div class="ds-sub">Acesso imediato, pagamento único</div>
+      <button class="cta-block cta-roxo" style="max-width:320px;margin:0 auto;" onclick="goTY(true)">Quero só o calendário →</button>
+      <br><span class="skip" onclick="goTY(false)">Não, ir para meu acesso agora</span>
     </div>
   </div>
 </div>
 
-<!-- ══ PÁGINA DE OBRIGADO ══ -->
-<div class="thankyou-page" id="thankyou">
-  <div class="container" style="max-width:600px;text-align:center;">
+
+<!-- ══════════════════════════════════════
+     PÁGINA DE OBRIGADO
+══════════════════════════════════════ -->
+<div class="ty-page" id="ty">
+  <div class="container" style="max-width:580px;text-align:center;">
     <div class="ty-icon">🎉</div>
     <h2 style="margin-bottom:.8rem;">Compra Confirmada!<br><span class="gv">Bem-vindo ao Destravando Vendas</span></h2>
-    <p style="color:var(--texto2);line-height:1.7;">Você receberá um e-mail em instantes com o link de acesso. Enquanto isso, confira o que vem por aí:</p>
-    <div class="ty-box" style="margin-top:1.5rem;">
-      <ul class="ty-items" style="list-style:none;">
-        <li><span style="font-size:1.1rem">📘</span>&nbsp; <b style="color:var(--branco)">Destravando Vendas</b> — Guia principal no seu e-mail</li>
-        <li id="ty-up1" style="display:none"><span style="font-size:1.1rem">🟢</span>&nbsp; <b style="color:var(--verde)">Scripts Matadores</b> — 47 scripts prontos, chegando junto</li>
-        <li id="ty-up2" style="display:none"><span style="font-size:1.1rem">🎬</span>&nbsp; <b style="color:var(--laranja)">Reels que Vendem</b> — Roteiros prontos no mesmo acesso</li>
-        <li id="ty-up3" style="display:none"><span style="font-size:1.1rem">📲</span>&nbsp; <b style="color:#C084FC">Stories que Faturam</b> — Calendário e 30 sequências prontas</li>
-        <li><span style="font-size:1.1rem">🎁</span>&nbsp; <b style="color:var(--dourado)">Bônus Surpresa</b> — Checklist "Perfil que Vende" enviado em 24h</li>
-        <li><span style="font-size:1.1rem">🛡️</span>&nbsp; Garantia de 7 dias ativa — devolução total sem burocracia</li>
+    <p style="color:var(--texto2);line-height:1.7;margin-bottom:1.5rem;">Você receberá um e-mail em instantes com o link de acesso. Confira o que você acabou de garantir:</p>
+    <div class="ty-box">
+      <ul class="ty-items">
+        <li><span>📘</span><span><b style="color:var(--branco);">Destravando Vendas</b> — Guia principal enviado no seu e-mail</span></li>
+        <li id="ty-up1" style="display:none;"><span>🟢</span><span><b style="color:var(--verde);">Scripts Matadores</b> — 47 scripts prontos incluídos no acesso</span></li>
+        <li id="ty-up2" style="display:none;"><span>🎬</span><span><b style="color:var(--laranja);">Reels que Vendem</b> — Roteiros prontos no mesmo acesso</span></li>
+        <li id="ty-up3" style="display:none;"><span>📲</span><span><b style="color:#C084FC;">Stories que Faturam</b> — Calendário e sequências prontas</span></li>
+        <li><span>🎁</span><span><b style="color:var(--dourado);">Bônus Surpresa</b> — Checklist "Perfil que Vende" em até 24h</span></li>
+        <li><span>🛡️</span><span>Garantia de 7 dias ativa — devolução total sem burocracia</span></li>
       </ul>
     </div>
-    <p style="color:var(--texto2);font-size:.88rem;margin-top:1.5rem;line-height:1.7;">💬 Conta pra gente como foi! Seu depoimento ajuda outros vendedores e você ganha <b style="color:var(--branco)">15% de desconto</b> na próxima compra.</p>
+    <p class="ty-note">💬 Que tal compartilhar sua experiência? Seu depoimento ajuda outros vendedores — e você ganha <b style="color:var(--branco);">15% de desconto</b> na próxima compra.</p>
   </div>
 </div>
 
-<!-- COPIES -->
-<section class="copies-section" id="copies">
-  <div class="container">
-    <div class="tag">Copies prontas</div>
-    <h2>Textos Prontos para <span class="g">Cada Etapa</span></h2>
-    <div class="tabs-nav">
-      <button class="tab-btn active" onclick="switchTab(this,'tab-main')">Produto Principal</button>
-      <button class="tab-btn" onclick="switchTab(this,'tab-ob')">Order Bump</button>
-      <button class="tab-btn" onclick="switchTab(this,'tab-up1')">Upsell 1 (Scripts)</button>
-      <button class="tab-btn" onclick="switchTab(this,'tab-up2')">Upsell 2 (Reels)</button>
-      <button class="tab-btn" onclick="switchTab(this,'tab-up3')">Upsell 3 (Stories)</button>
-    </div>
-
-    <div class="tab-content active" id="tab-main">
-      <div class="copy-card"><div class="copy-header">📱 Reel — Gancho de Atenção</div><div class="copy-body"><b>Você posta todo dia e não vende nada?</b><br><br>Eu também passei por isso. Até descobrir que postar bonito é diferente de postar para vender.<br><br>Tem 3 erros que 9 em cada 10 vendedores cometem no Instagram — e provavelmente você está cometendo pelo menos 1 agora.<br><br>Comenta <b>"QUERO"</b> que eu te mando o checklist gratuito no Direct. 👇</div></div>
-      <div class="copy-card"><div class="copy-header">📩 Direct — Lançamento 72h</div><div class="copy-body">Oi [nome]! 🙋<br><br>Lançamos o <b>Destravando Vendas</b> — o método completo para vender todos os dias no Instagram e Facebook.<br><br>Por 72 horas está com 63% de desconto + 2 bônus exclusivos.<br><br>👉 [LINK DA CAKTO]<br><br>Garantia de 7 dias. Qualquer dúvida me chama aqui!</div></div>
-      <div class="copy-card"><div class="copy-header">🔁 Story — Urgência Final</div><div class="copy-body"><b>⚠️ ÚLTIMA HORA</b><br><br>Preço de lançamento do Destravando Vendas encerra hoje às 23h59.<br><br>Depois disso volta ao valor cheio.<br><br>Link na bio ou responde esse story com <b>"QUERO"</b> 🚀</div></div>
-    </div>
-
-    <div class="tab-content" id="tab-ob">
-      <div class="copy-card"><div class="copy-header">🛒 Texto do Order Bump no Checkout</div><div class="copy-body"><b>⚡ SIM! Quero os Scripts Matadores por apenas +R$27</b><br><br>Adicione ao seu pedido 47 scripts prontos para Direct e Messenger — abordagem, objeções e follow-up. Basta marcar a caixinha acima e o material é incluído automaticamente no seu acesso.<br><br>De R$67 por apenas +R$27 (desconto exclusivo para quem está comprando agora).</div></div>
-      <div class="copy-card"><div class="copy-header">📣 Story anunciando o Order Bump</div><div class="copy-body">Você sabia que o maior erro de quem compra um guia de vendas é não ter os scripts prontos para executar?<br><br>Pois é. Por isso, quem comprar o Destravando Vendas hoje vai poder adicionar os <b>47 Scripts Matadores</b> direto no checkout por apenas +R$27.<br><br>Você escolhe na hora do pagamento — sem complicação. 👉 Link na bio.</div></div>
-    </div>
-
-    <div class="tab-content" id="tab-up1">
-      <div class="copy-card"><div class="copy-header">🟢 Upsell 1 — Headline da Página</div><div class="copy-body"><b>Seu pedido foi confirmado! Antes de liberar seu acesso, uma oferta que só aparece agora:</b><br><br>Você tem o método. Agora precisa das palavras certas para fechar.<br><br>Os Scripts Matadores são 47 templates prontos de mensagem para Direct e Messenger — do primeiro contato ao fechamento. Basta copiar, adaptar e enviar. Sem improvisar, sem travar na hora H.<br><br><b>Por apenas R$37 — exclusivo para quem acabou de comprar o Destravando Vendas.</b></div></div>
-      <div class="copy-card"><div class="copy-header">💬 Mensagem de Follow-up (quem não aceitou o Upsell 1)</div><div class="copy-body">Oi [nome], tudo bem? Você garantiu o Destravando Vendas — ótima decisão!<br><br>Só passando para avisar que os <b>Scripts Matadores</b> que você viu no checkout ainda estão disponíveis por R$37 por mais 24 horas.<br><br>Depois disso, só pelo preço cheio de R$67. 👉 [LINK]</div></div>
-    </div>
-
-    <div class="tab-content" id="tab-up2">
-      <div class="copy-card"><div class="copy-header">🎬 Upsell 2 — Headline da Página</div><div class="copy-body"><b>Scripts na mão. Agora vamos atrair mais gente para ver?</b><br><br>Scripts convertem quem já te segue. Reels trazem gente nova todos os dias para o seu perfil. Os dois juntos formam um ciclo de vendas automático — método entra, Reels alimenta, Scripts fecha.<br><br>Reels que Vendem por apenas R$27 — só para quem está comprando hoje.</div></div>
-      <div class="copy-card"><div class="copy-header">📱 Reel para divulgar o Upsell 2</div><div class="copy-body"><b>O que adianta saber vender se ninguém te vê?</b><br><br>Essa é a pergunta que a maioria ignora. Você aprende a converter, mas não aprende a atrair.<br><br>É por isso que criei o Reels que Vendem — o método dos 3 segundos para criar Reels que param o scroll, atraem seguidores qualificados e geram vendas.<br><br>Comenta <b>"REELS"</b> que te mando os detalhes no Direct. 🎬</div></div>
-    </div>
-  </div>
-</section>
-
-<!-- OBJEÇÕES -->
-<section class="obj-section">
-  <div class="container">
-    <div class="tag">Quebre a resistência</div>
-    <h2>Objeções Respondidas para <span class="g">Cada Produto</span></h2>
-    <div style="margin-top:2rem;">
-      <div class="obj-item"><div class="obj-q">Destravando Vendas — "Já tentei e não funcionou pra mim"</div><div class="obj-a">A maioria tenta estratégias genéricas sem estrutura. O Destravando Vendas traz um método testado com mais de 2.800 vendedores, com scripts prontos e funil passo a passo — não é mais um conteúdo de teoria.</div></div>
-      <div class="obj-item"><div class="obj-q">Scripts Matadores — "Não parece natural usar scripts"</div><div class="obj-a">Cada script tem instruções de personalização. O objetivo não é soar como robô — é ter uma base sólida para não travar na hora H. Você adapta para a sua linguagem em 2 minutos.</div></div>
-      <div class="obj-item"><div class="obj-q">Reels que Vendem — "Não sei editar vídeo"</div><div class="obj-a">O método não exige edição elaborada. Os Reels que mais vendem são gravados na frente do celular, com boa iluminação e roteiro claro. O guia mostra exatamente como fazer isso.</div></div>
-      <div class="obj-item"><div class="obj-q">Stories que Faturam — "Não sei o que postar todo dia"</div><div class="obj-a">Esse é exatamente o problema que o guia resolve. O calendário semanal diz o tema de cada dia e as sequências prontas mostram o roteiro completo de cada Story. Você não precisa criar nada do zero.</div></div>
-      <div class="obj-item"><div class="obj-q">Sobre os quatro — "É muito conteúdo para absorver"</div><div class="obj-a">Cada produto é objetivo e direto. Destravando Vendas tem 6 capítulos práticos. Scripts é uma biblioteca de templates. Reels tem roteiros prontos. Você pode começar a usar no mesmo dia que acessar.</div></div>
-    </div>
-  </div>
-</section>
-
-<!-- PREÇO FINAL -->
-<section class="preco-section" id="preco">
-  <div class="container">
-    <div class="tag">Oferta de lançamento</div>
-    <h2>Comece a Vender<br><span class="g">Todos os Dias</span></h2>
-    <div class="preco-box">
-      <p class="preco-de">De R$ 251,00 (os 3 juntos)</p>
-      <p style="font-size:.9rem;color:var(--texto2);margin-bottom:.3rem;">Kit completo por apenas</p>
-      <p class="preco-val">R$ 101</p>
-      <p class="preco-parc">ou 3x de R$ 36,90 sem juros</p>
-      <a href="#checkout" class="cta cta-azul" style="display:block;text-align:center;width:100%;">Garantir o Kit Completo →</a>
-      <div class="garantia"><span>🛡️</span> Garantia de 7 dias — risco zero, devolução total</div>
-    </div>
-  </div>
-</section>
-
-<!-- URGÊNCIA -->
-<section class="urgencia-section">
-  <div class="container">
-    <h2 style="font-size:clamp(1.7rem,5vw,2.8rem);">⚡ Preço de Lançamento por <span class="g">72 horas</span></h2>
-    <p>Após esse período, cada produto volta ao preço normal. Não perca.</p>
-    <a href="#checkout" class="cta cta-azul" style="margin-top:1.8rem;display:inline-block;">Aproveitar Agora →</a>
-  </div>
-</section>
-
-<footer>
-  <p>© 2026 Destravando Vendas · Todos os direitos reservados</p>
-  <p style="margin-top:.5rem;">Produto vendido pela plataforma Cakto. Resultados podem variar de acordo com a dedicação de cada usuário.</p>
-</footer>
 
 <script>
-let ob1Checked = false;
-let up1Bought = false;
-let up2Bought = false;
+let obOn = false, got1 = false, got2 = false, got3 = false;
 
-function toggleOB(el, totalId, withOB, withoutOB) {
-  ob1Checked = !ob1Checked;
-  el.classList.toggle('checked');
-  document.getElementById('ob1-check').style.display = ob1Checked ? 'block' : 'none';
-  const total = document.getElementById(totalId);
-  const desc = document.getElementById('total-desc');
-  if (ob1Checked) {
-    total.textContent = 'R$ ' + withOB + ',00';
-    desc.textContent = '2 produtos (Destravando Vendas + Scripts Matadores)';
-  } else {
-    total.textContent = 'R$ ' + withoutOB + ',00';
-    desc.textContent = '1 produto';
-  }
+function toggleOB(el){
+  obOn = !obOn;
+  el.classList.toggle('on');
+  el.textContent = obOn ? '✓' : '';
+  document.getElementById('total-val').textContent  = obOn ? 'R$ 74,00' : 'R$ 47,00';
+  document.getElementById('total-desc').textContent = obOn ? '2 produtos (Destravando Vendas + Scripts Matadores)' : '1 produto';
 }
 
-function hide(id){ document.getElementById(id).style.display='none'; }
-function show(id){ document.getElementById(id).style.display='block'; }
-
-function goUpsell() {
-  // Esconde todas as seções de página de vendas
-  document.querySelectorAll('section, .hero, .fmap-bar').forEach(s => s.style.display = 'none');
-  if (ob1Checked) {
-    // Já comprou order bump → vai para upsell 2 direto
-    up1Bought = true;
-    document.getElementById('ty-up1').style.display = 'flex';
-    showPage('upsell2');
-  } else {
-    showPage('upsell1');
-  }
+function hideMain(){
+  document.getElementById('main').style.display = 'none';
+}
+function showPage(id){
+  document.getElementById(id).classList.add('visible');
+  document.getElementById(id).style.display = 'block';
   window.scrollTo({top:0,behavior:'smooth'});
 }
-
-function goUpsell2() {
-  up1Bought = true;
-  document.getElementById('ty-up1').style.display = 'flex';
-  hidePage('upsell1');
-  showPage('upsell2');
-  window.scrollTo({top:0,behavior:'smooth'});
-}
-
-function goUpsell3() {
-  up2Bought = true;
-  document.getElementById('ty-up2').style.display = 'flex';
-  hidePage('upsell2');
-  showPage('upsell3');
-  window.scrollTo({top:0,behavior:'smooth'});
-}
-
-function goThankyou(up3) {
-  if (up1Bought) document.getElementById('ty-up2').style.display = 'flex';
-  if (up3) document.getElementById('ty-up3').style.display = 'flex';
-  hidePage('upsell2');
-  hidePage('upsell3');
-  const ty = document.getElementById('thankyou');
-  ty.classList.add('visible');
-  ty.style.display = 'flex';
-  window.scrollTo({top:0,behavior:'smooth'});
-}
-
-function showPage(id) {
-  const el = document.getElementById(id);
-  el.classList.add('visible');
-  el.style.display = 'block';
-}
-function hidePage(id) {
+function hidePage(id){
   const el = document.getElementById(id);
   el.classList.remove('visible');
   el.style.display = 'none';
 }
-
-function showDownsell1() {
-  document.getElementById('downsell1').classList.add('visible');
-  document.getElementById('downsell1').style.display = 'block';
-}
-function showDownsell3() {
-  document.getElementById('downsell3').classList.add('visible');
-  document.getElementById('downsell3').style.display = 'block';
-}
-function showDownsell2() {
-  document.getElementById('downsell2').classList.add('visible');
-  document.getElementById('downsell2').style.display = 'block';
+function showDS(id){
+  const el = document.getElementById(id);
+  el.classList.add('visible');
+  el.style.display = 'block';
 }
 
-function switchTab(btn, tabId) {
-  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-  document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
-  btn.classList.add('active');
-  document.getElementById(tabId).classList.add('active');
+function goUpsell1(){
+  hideMain();
+  if(obOn){ got1 = true; document.getElementById('ty-up1').style.display='flex'; goUpsell2(true); }
+  else { showPage('upsell1'); }
 }
+function goUpsell2(yes){
+  if(yes){ got1 = true; document.getElementById('ty-up1').style.display='flex'; }
+  hidePage('upsell1');
+  showPage('upsell2');
+}
+function goUpsell3(yes){
+  if(yes){ got2 = true; document.getElementById('ty-up2').style.display='flex'; }
+  hidePage('upsell2');
+  showPage('upsell3');
+}
+function goTY(yes){
+  if(yes){ got3 = true; document.getElementById('ty-up3').style.display='flex'; }
+  hidePage('upsell3');
+  showPage('ty');
+}
+
+function showDS1(){ showDS('ds1'); }
+function showDS2(){ showDS('ds2'); }
+function showDS3(){ showDS('ds3'); }
 </script>
 </body>
 </html>
