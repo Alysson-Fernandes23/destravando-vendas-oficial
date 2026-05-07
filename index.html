@@ -45,7 +45,7 @@ h2{font-family:'Syne',sans-serif;font-size:clamp(1.8rem,5vw,3rem);font-weight:80
 .hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 55% 40% at 20% 50%,rgba(131,58,180,.18) 0%,transparent 65%),radial-gradient(ellipse 55% 40% at 80% 50%,rgba(24,119,242,.18) 0%,transparent 65%);}
 .ig-badge{display:inline-flex;align-items:center;gap:.5rem;background:linear-gradient(90deg,#833AB4,#F77737);padding:.4rem 1.2rem;border-radius:50px;font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:1.6rem;animation:glow 3s ease-in-out infinite;}
 @keyframes glow{0%,100%{box-shadow:0 0 0 rgba(131,58,180,0)}50%{box-shadow:0 0 30px 6px rgba(131,58,180,.4)}}
-.hero h1{font-family:'Syne',sans-serif;font-size:clamp(3rem,11vw,7.5rem);font-weight:800;line-height:.92;color:var(--branco);margin-bottom:1rem;position:relative;z-index:1;}
+.hero h1{font-family:'Syne',sans-serif;font-size:clamp(2.2rem,10vw,7.5rem);font-weight:800;line-height:1;color:var(--branco);margin-bottom:1rem;position:relative;z-index:1;word-break:break-word;padding:0 .3rem;}
 .hero-sub{font-size:clamp(1rem,2.5vw,1.25rem);color:var(--texto2);max-width:570px;margin:0 auto 2.2rem;line-height:1.7;position:relative;z-index:1;}
 .hero-sub b{color:var(--texto);}
 .hero-stats{display:flex;gap:2.5rem;margin-top:2.2rem;flex-wrap:wrap;justify-content:center;position:relative;z-index:1;}
@@ -203,6 +203,18 @@ footer{background:var(--cinza);padding:2rem 1.4rem;text-align:center;font-size:.
 
 /* ── PAGINAS ESCONDIDAS ── */
 .main-content{display:block;}
+
+@media(max-width:768px){
+  .hero h1{
+    font-size:3rem;
+    line-height:1.05;
+  }
+
+  .hero{
+    padding-top:5rem;
+  }
+}
+
 </style>
 </head>
 <body>
@@ -336,37 +348,16 @@ footer{background:var(--cinza);padding:2rem 1.4rem;text-align:center;font-size:.
           </div>
         </div>
 
-        <!-- Order Bump -->
-        <div class="order-bump">
-          <div class="ob-badge">⚡ Adicione por apenas +R$27</div>
-          <div class="ob-row">
-            <div class="ob-chk" id="ob-chk" onclick="toggleOB(this)"></div>
-            <div>
-              <div class="ob-title">🟢 SIM! Quero os Scripts Matadores</div>
-              <div class="ob-desc">47 scripts prontos para Direct e Messenger — abordagem, objeções e follow-up. Adicione ao seu pedido com 1 clique e comece a usar hoje mesmo.</div>
-              <div class="ob-price-row">
-                <span class="ob-de">R$ 67,00</span>
-                <span class="ob-por">+ R$ 27,00</span>
-                <span class="ob-save">Você economiza R$ 40</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
         <!-- Total -->
         <div class="total-row">
           <div>
             <div class="total-lbl">Total do pedido</div>
-            <div class="total-desc" id="total-desc">1 produto</div>
+            <div class="total-desc">1 produto</div>
           </div>
-          <div class="total-val" id="total-val">R$ 47,00</div>
+          <div class="total-val">R$ 47,00</div>
         </div>
 
-        <a href="https://pay.cakto.com.br/mhv7673_876180" target="_blank">
-  <button class="cta-block cta-azul">
-    🔒 Finalizar Compra com Segurança
-  </button>
-</a>
+        <a href="https://pay.cakto.com.br/mhv7673_876180" class="cta-block cta-azul" style="text-decoration:none;display:block;">🔒 Finalizar Compra com Segurança →</a>
         <div class="safe-row">
           <span>🔒 Pagamento seguro</span>
           <span>·</span>
@@ -545,16 +536,6 @@ footer{background:var(--cinza);padding:2rem 1.4rem;text-align:center;font-size:.
 
 
 <script>
-let obOn = false, got1 = false, got2 = false, got3 = false;
-
-function toggleOB(el){
-  obOn = !obOn;
-  el.classList.toggle('on');
-  el.textContent = obOn ? '✓' : '';
-  document.getElementById('total-val').textContent  = obOn ? 'R$ 74,00' : 'R$ 47,00';
-  document.getElementById('total-desc').textContent = obOn ? '2 produtos (Destravando Vendas + Scripts Matadores)' : '1 produto';
-}
-
 function hideMain(){
   document.getElementById('main').style.display = 'none';
 }
